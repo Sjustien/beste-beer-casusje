@@ -1,0 +1,34 @@
+<body>
+  <nav>
+    <div class="nav-content">
+      <!-- <img class="LogoPng" src="./assets/pngtree-pint-of-beer-with-a-big-head-of-froth-in-a-png-image_4698892.png" /> -->
+      <div class="logo">
+        <a href="#">Bier-Zuiptorren</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Bier</a></li>
+        <li><a href="#">Brouwers</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+          class="Formbutton"
+        >
+          Sign Up
+        </button>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 20) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    };
+  </script>
+</body>
